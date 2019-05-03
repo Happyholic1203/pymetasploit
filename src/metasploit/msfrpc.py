@@ -1352,6 +1352,10 @@ class MsfModule(object):
         """
         return self._moptions.keys()
 
+    @options.setter
+    def options(self, new_opts):
+        self._moptions = new_opts
+
     @property
     def required(self):
         """
